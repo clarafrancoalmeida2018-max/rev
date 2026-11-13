@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site institucional</title>
-    <link rel="stylesheet" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Site Institucional</title>
+     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <a class="nav-item" href="../Home/index.html">
-            <img class="nav-icon" src="../assets/icons/home.png" alt="">
-            <p>Home</p>
-        </a>
+     <nav>
+          <a class="nav-item" href="../Home/index.html">
+               <img class="nav-icon" src="../assets/icons/home.png" alt="">
+               <p>Home</p>
+          </a>
 
-        <a class="nav-item" href="../Home/index.html">
-            <img class="nav-icon" src="../assets/icons/home.png" alt="">
-            <p>instituição</p>
-        </a>
+          <a class="nav-item" href="../Instituition">
+               <img class="nav-icon" src="../assets/icons/home.png" alt="">
+               <p>Instituição</p>
+          </a>
 
-        <a class="nav-item" href="../Home/index.html">
-            <img class="nav-icon" src="../assets/icons/home.png" alt="">
-            <p>Produtos</p>
-        </a>
+          <a class="nav-item" href="../Products/">
+               <img class="nav-icon" src="../assets/icons/home.png" alt="">
+               <p>Produtos</p>
+          </a>
 
-        <a class="nav-item" href="../Home/index.html">
-            <img class="nav-icon" src="../assets/icons/home.png" alt="">
-            <p>Home</p>
-        </a>
-    </nav>
+          <a class="nav-item" href="../Contact/">
+               <img class="nav-icon" src="../assets/icons/home.png" alt="">
+               <p>Contato</p>
+          </a>
+     </nav>
+     <div id="wrap-open" class="wrap-open" onclick="openMenu()">
+          <img src="../assets/icons/pngtree-menu-icon-image_1344445.jpg" alt="menu">
+     </div>
+     <div id="menu-mobile">
+          <img onclick="fechar()" src="../assets/icons/fechar.png" alt="">
+          <a href="../Home/">Home</a>
+          <a href="../Instituition/">Instituição</a>
+          <a href="../Products/">Produtos</a>
+          <a href="../Contact/">Contatos</a>
+     </div>
 
-    <div class="wrap-open">
-        <img src="../assets/icons/menu.png" alt="menu">
-    </div>
+     <section class="s1">
+          <div class="wrap-divs">
+               <div class="title-div">
+                    <h1>Titulo alguma coisa</h1>
+               </div>
+               <div class="wrap-btns">
+                    <button onclick="irParaContato()">Contact</button>
+                    <button onclick="irParaBaixo()">para baixo</button>
+               </div>
+          </div>
 
-    <div id="menu-mobile">
-        <a href="">home</a>
-        <a href="">instituição</a>
-        <a href="">Produtos</a>
-        <a href="">contato</a>
+     </section>
 
-    </div>
+     <section class="s2">
+          <div class="card" id="s2">
+               <div class="wrap-img">
+                    <img width="400px" src="../assets/images/card01.jpg" alt="">
+               </div>
+               <div class="wrap-text">
+                    <h3>card 01</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis dolores quis
+                         voluptatem, neque iure consequuntur quasi tenetur, quibusdam at sequi qui soluta sed animi nisi
+                         perspiciatis suscipit dignissimos voluptatum.</p>
+               </div>
+          </div>
 
-    <section class="s1">
+          <div class="card">
+               <div class="wrap-img">
+                    <img width="400px" src="../assets/images/card02.jpg" alt="">
+               </div>
+               <div class="wrap-text">
+                    <h3>card 01</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis dolores quis
+                         voluptatem, neque iure consequuntur quasi tenetur, quibusdam at sequi qui soluta sed animi
+                         nisi perspiciatis suscipit dignissimos voluptatum.</p>
+               </div>
+          </div>
+          <div class="card">
+               <div class="wrap-img">
+                    <img width="400px" src="../assets/images/card03.jpg" alt="">
+               </div>
+               <div class="wrap-text">
+                    <h3>card 01</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facilis dolores quis
+                         voluptatem, neque iure consequuntur quasi tenetur, quibusdam at sequi qui soluta sed animi
+                         nisi perspiciatis suscipit dignissimos voluptatum.</p>
+               </div>
+          </div>
 
-    </section>
-        
-    <section class="s2">
+     </section>
 
-    </section>
-
-
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
+
 </html>
