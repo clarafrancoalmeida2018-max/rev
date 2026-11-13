@@ -95,6 +95,7 @@ nav{
     gap: 50px;
     flex-wrap: wrap;
     padding: 50px;
+    background-color: #e0a1c8;
 }
 
 .card{

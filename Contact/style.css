@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -15,7 +15,7 @@ nav{
     background-color: white;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -27,28 +27,122 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-item:hover{
+.nav-item:hover {
     opacity: 1;
 }
 
-.nav-icon{
+.nav-icon {
     width: 40px;
     height: auto;
 }
 
-.wrap-open, .wrap-open img {
-    display: none;
-}
-#menu-mobile, #menu-mobile img {
+.wrap-open,
+.wrap-open img {
     display: none;
 }
 
-@media (width <= 1000px){
-    nav{
+#menu-mobile,
+#menu-mobile img {
+    display: none;
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.formulario {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.486);
+    position: relative;
+}
+
+.wrap-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-size: 10px;
+    margin-top: 2vh;
+}
+
+input {
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background: black;
+    color: #ffffff;
+}
+
+.formulario img {
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -35px;
+    border: 2px solid black;
+    border-radius: 28px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.432);
+}
+
+.img-div {
+    /* background-image: url('../assets/icons/kkk.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 100vh;
+    width: 50vw;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-div {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media (width <=1000px) {
+    .img-div {
+        display: none;
+    }
+
+    nav {
         display: none;
 
     }
-    .wrap-open{
+
+    .wrap-open {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,16 +156,18 @@ nav{
         transition: all 200ms ease-in-out;
         border-radius: 5px;
     }
-    
-    .wrap-open:hover{
-    cursor: pointer;
-    opacity: 1;
+
+    .wrap-open:hover {
+        cursor: pointer;
+        opacity: 1;
     }
-    .wrap-open img{
+
+    .wrap-open img {
         width: 35px;
         display: flex;
     }
-    #menu-mobile{
+
+    #menu-mobile {
         display: none;
         align-items: center;
         justify-content: center;
@@ -82,18 +178,21 @@ nav{
         background-color: #ffffff;
         animation: deCima 1s ease-in-out;
     }
-    #menu-mobile a{
+
+    #menu-mobile a {
         text-decoration: none;
         color: black;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         opacity: 0.5;
         transition: all 200ms ease-in-out;
     }
-    #menu-mobile a:hover{
+
+    #menu-mobile a:hover {
         opacity: 1;
         font-weight: bold;
     }
-    #menu-mobile img{
+
+    #menu-mobile img {
         width: 35px;
         position: absolute;
         top: 10px;
@@ -101,78 +200,24 @@ nav{
         opacity: 0.5;
         transition: all 200ms ease-in-out;
     }
-    #menu-mobile img:hover{
+
+    #menu-mobile img:hover {
         opacity: 1;
         cursor: pointer;
     }
-    #menu-mobile img{
+
+    #menu-mobile img {
         display: block;
     }
-}
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-.formulario{
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.486);
-    position: relative;
-}
-.wrap-inputs{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-label{
-    font-size: 10px;
-    margin-top: 2vh;
-}
-input{
-    padding: 10px;
-    background: none;
-    outline: none;
-    border: none;
-    border-bottom: 2px solid black;
-}
-button{
-    padding: 10px;
-    margin-top: 20px;
-    background: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    width: 100%;
-    font-size: 18px;
-    transition: all 200ms ease-in-out;
-}
-button:hover{
-    cursor: pointer;
-    background: black;
-    color: #ffffff;
-}
-.formulario img{
-    width: 70px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: -35px;
-    border: 2px solid black;
-    border-radius: 28px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.432);
 }
 
 
 @keyframes deCima {
-    0%{
+    0% {
         transform: translateY(-100%);
         height: 0vh;
         opacity: 0;
     }
-    
-    
-}
 
+
+}
